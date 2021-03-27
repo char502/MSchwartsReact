@@ -24,6 +24,8 @@ function NewMeetupPage() {
     });
   }
 
+  // Some test data
+
   return <section>
     <h1>
       Add New Meetup
