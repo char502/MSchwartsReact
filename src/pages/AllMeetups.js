@@ -20,7 +20,7 @@ function AllMeetupsPage() {
       return response.json();
     }).then(data => {
 
-      console.log(data)
+      // console.log(data)
       const meetups = [];
 
       for (const key in data) {
@@ -28,14 +28,14 @@ function AllMeetupsPage() {
         const meetup = {
           id: key,
           ...data[key],
-          // ...data[key] is used to access the value of the key/value pair
-          // in this case the values of key (because the '...' is used)
+          // ...data[key] is used to access the VALUE of the key/value pair
+          // in this case the value(s) of key (because the '...' is used)
         };
 
         meetups.push(meetup);
       }
 
-      console.log(meetups)
+      // console.log(meetups)
       
       setIsLoading(false)
       setloadedMeetups(meetups)
