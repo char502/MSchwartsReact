@@ -29,8 +29,6 @@ function NewMeetupForm(props) {
     } 
     
     props.onAddMeetup(meetupData)
-
-    alert('you have added data to the database')
     
   }
 
